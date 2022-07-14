@@ -1,0 +1,43 @@
+#include "Header.h"
+#include <iostream>
+#pragma warning(disable : 4996)
+
+typedef struct vertex
+{
+    char ch; 
+    struct vertex* next; 
+} STACK;
+
+int main() {
+
+    FILE* fp;
+    char str[BUFSIZ];
+
+    fp = fopen("f.txt", "r");
+    if (fp == NULL) {
+        perror("Error opening file");
+        return(0);
+    }
+    if (fgets(str, 60, fp) != NULL) {
+        puts(str);
+    }
+}
+   /* STACK* head, * q;
+    char a;
+    head = NULL; 
+    //printf("Enter a string to reverse:\n");
+    do 
+    {
+        a = getchar(); 
+        q = new STACK; //створення нового вузла стеку
+        q->ch = puts(str);
+        //q->ch = a; //заповнення нового вузла
+        q->next = head; //включення нового вузла у стек
+        head = q; //head знову вказує на вершину стеку
+        std::cout << head->ch;
+    } while (fgets(str, 60, fp) != NULL);
+
+    fclose(fp);
+    return(0);
+}*/
+
