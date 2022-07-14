@@ -8,7 +8,7 @@ int main() {
     int choice = 0;
     char fname[] = "file.txt";
     stack* FTS = File_to_stack(fname);
-    puts("FIRSTLY, PLEASE CHOSE FILE(YOU CAN CHANGE IT AT ANY TIME YOU WANT)");
+    puts("FIRSTLY, PLEASE CHOOSE FILE(YOU CAN CHANGE IT AT ANY TIME YOU WANT)");
     stack* head = NULL;
     while (((choice = menu()) != end)) 
     {
