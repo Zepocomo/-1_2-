@@ -20,7 +20,7 @@ int main() {
         case number_Stack: Number_Stack(FTS); break;
         case destroyStack: DestroyStack(FTS); break;
         case purge: Reverse_stack(FTS); Purge(FTS); break;
-        default: "ERROR CHOICE"; break;
+        default: "ERROR CHOICE !!!"; break;
         }
         printf("%c", '\n');
     }
